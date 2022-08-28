@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-accent: #F7F7F7;
+    --clr-border: #d3d3d3;
+    --border-size: 6px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    margin-block: 20px;
+}
+
+.card__top {
+    position: relative;
+}
+
+.card__favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 16px;
+}
+
+.card__image {
+    background-color: transparent;
+    border-right: 1px solid var(--clr-border);
+    border-top: 1px solid var(--clr-border);
+    border-left: 1px solid var(--clr-border);
+
+    border-radius: var(--border-size) var(--border-size) 0 0;
+    width: 350px;
+}
+
+.card__bottom {
+    border-right: 1px solid var(--clr-border);
+    border-bottom: 1px solid var(--clr-border);
+    border-left: 1px solid var(--clr-border);
+
+    border-radius: 0 0 var(--border-size) var(--border-size);
+    width: 350px;
+    margin-top: -7px;
+}
+
+.card__info {
+    background-color: var(--clr-accent);
+    padding-block: 5px;
+}
+
+.card__span {
+    padding-inline: 8px;
+}
+
+.card__icon {
+    height: 16px;
+    padding-inline: 5px;
+}
+
+.card__titel {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px;
+    /*padding-block: 10px;*/
+}

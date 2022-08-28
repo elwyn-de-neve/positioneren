@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-primary: #DE6127;
+    --clr-secondary: #e8e8e8;
+    --clr-tertiary: #737373;
+    --border-size: 6px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    margin-block: 20px;
+}
+
+.card__top {
+    position: relative;
+}
+
+.card__favorite {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 16px;
+}
+
+.card__tab {
+    background: var(--clr-secondary);
+    position: absolute;
+    top: 60px;
+    left: -70px;
+    padding: 10px 30px;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.card__tab--new {
+    color: var(--clr-primary);;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card__image {
+    width: 350px;
+}
+
+.card__bottom * {
+    padding: 2px 0;
+}
+
+.card__subtitle {
+    color: var(--clr-tertiary);
+    font-size: 12px;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card__price {}
+
+.card__colors {}
+
+.card__dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.clr-pink {
+    background-color: #faa0c7;
+}
+
+.clr-black {
+    background-color: #272729;
+}
+
+.clr-beige {
+    background-color: #928471;
+}
+
+.clr-taupe {
+    background-color: #c2c2b4;
+}
